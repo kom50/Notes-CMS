@@ -84,8 +84,8 @@ async function save(event: any) {
 
     const note: Note = {
         title: title.value,
-        subtitle: title.value,
-        description: title.value,
+        subtitle: subtitle.value,
+        description: description.value,
         timestamp: Date.now(),
         id: uuidv4()
     }
