@@ -87,7 +87,8 @@ async function save(event: any) {
         subtitle: subtitle.value,
         description: description.value,
         timestamp: Date.now(),
-        id: uuidv4()
+        id: uuidv4(),
+        favorite: false
     }
 
     // Store in IDB and also in note store
