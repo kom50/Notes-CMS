@@ -30,3 +30,12 @@ export async function storeNote(note: Note) {
 export async function readNotes(): Promise<Note[]> {
     return await (await getIDB()).getAll('notes') as Note[];
 }
+
+/**
+ * Function to delete note from in IndexedDB
+ * 
+ * @param {string} noteId - noteId
+ */
+export async function deleteNote(noteId: string) {
+    await (await getIDB()).delete('notes', noteId)
+}

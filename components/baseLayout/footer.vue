@@ -6,7 +6,7 @@
                 Recent
             </v-btn>
             <NotesCreateDialog> </NotesCreateDialog>
-            <v-btn value="favorites">
+            <v-btn value="favorites" @click="EventBus.$emit('showFavoriteNotes')">
                 <v-icon>mdi-heart</v-icon>
                 Favorites
             </v-btn>

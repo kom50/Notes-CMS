@@ -4,4 +4,5 @@ export interface Note {
     description: string;
     timestamp: number;
     id: string;
+    favorite: boolean;
 }

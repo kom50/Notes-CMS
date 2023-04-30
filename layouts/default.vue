@@ -3,7 +3,7 @@
         <div class="">
             <BaseLayoutHeader />
         </div>
-        <div class="mt-16 pt-2 p-2 box-border">
+        <div class="mt-14 pt-2 p-1 pb-12 box-border">
             <slot />
         </div>
         <div>
